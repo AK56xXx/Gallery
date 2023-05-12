@@ -20,6 +20,9 @@ namespace Gallery.Models.Domain
         [Required]
         public string? ReleaseYear { get; set; }
 
+        public virtual ICollection<GamesGenre>? GamesGenres { get; set; } = new List<GamesGenre>();
+
+
         [NotMapped]
         [Required]
         public List<int>? Genres { get; set; }
