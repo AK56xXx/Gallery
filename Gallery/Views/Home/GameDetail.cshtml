@@ -1,0 +1,19 @@
+﻿@model Gallery.Models.Domain.Game
+@{
+}
+<div class="movie-detail w-80 m-auto">
+    <div class="img-container">
+        <img alt="image" src="/Uploads/@Model.Image">
+    </div>
+
+    <div class="detail-container">
+        <h3>@Model.Title</h3>
+                <h4>@Model.GenreNames</h4>
+                <h4>@Model.ReleaseYear</h4>
+                <h4>Developer(s) : @Model.Developer</h4>
+                <h4>Publisher : @Model.Publisher</h4>     
+    </div>
+</div>
+<div class="w-80 m-auto">
+    <a href="/Home/Index" class="btn btn-default">Back</a>
+</div>
